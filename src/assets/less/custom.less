@@ -1,47 +1,22 @@
 // *****
 // * Custom Styles
 // *****
-/* Round information */
-.round-information {
-  width: 100px;
-  @media (max-width: 768px) {
-    min-width: 80px;
-  }
-}
-.title-part {
-  font-size: 19px;
-  font-weight: 700;
-  white-space: nowrap;
+.page-auctions-listing {
+    padding: 0 0 20px
 }
 
-/*----- Stage -----*/
-.stage-header {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: normal;
-  margin: 0;
-  padding: 25px 12px;
-  @media (max-width: @screen-sm-max) {
-    border-bottom: 1px solid @gray-color;
-  }
-}
-.stage-label {
-  padding: 5px 5px 5px 6px;
-  @media (min-width: @screen-sm-min) {
-    padding-left: 12px;
-  }
-}
-.stage-amount {
-  padding: 5px 8px;
-}
-.label-minimum {
-  @media (max-width: @screen-sm-max) {
-    line-height: 12px;
-  }
+@media (min-width: 768px) {
+    .panels-list {
+        column-count:2;
+        column-gap: 20px
+    }
 }
 
-/*----- Helper class -----*/
-.text-small {
-  font-size: 12px;
-  line-height: 17px;
+.panel-auction {
+    display: inline-block;
+    width: 100%
+}
+
+.panel-auction .btn {
+    border-radius: 4px
 }

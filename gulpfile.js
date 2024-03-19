@@ -101,7 +101,7 @@ gulp.task('build:buildout', ['clean', 'build'], () => {
     .pipe(gulp.dest(config.buildout_outDir));
 });
 
-gulp.task('default', ['build:buildout']);
+gulp.task('default', ['build']);
 
 gulp.task('clean', function() {
   del.sync([config.buildDir + '*/**', config.outDir + '*/**'], { force: true });
